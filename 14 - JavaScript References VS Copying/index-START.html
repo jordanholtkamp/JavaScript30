@@ -13,6 +13,12 @@
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 
     // and we want to make a copy of it.
+    const playersCopy = players.slice();
+
+    playersCopy[2] = 'jordan';
+
+    console.log(players);
+    console.log(playersCopy);
 
     // You might think we can just do something like this:
 
@@ -42,6 +48,10 @@
       age: 80
     };
 
+    const player = Object.assign({}, person, { number: 99, age: 18});
+
+    console.log(person);
+    console.log(player);
     // and think we make a copy:
 
     // how do we take a copy instead?
